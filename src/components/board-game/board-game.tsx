@@ -99,17 +99,17 @@ export const BoardGame = () => {
         <h1 className="text-[48px] min-[300px]:text-[24px] min-[600px]:text-[32px] min-[900px]:text-[48px] min-[1200px]:text-[64px] font-bold text-white">
           {BOARD_TITLE}
         </h1>
-        <div className="flex flex-row justify-around gap-[20px] w-full">
-          <p className="text-[24px] min-[300px]:text-[16px] min-[600px]:text-[20px] min-[900px]:text-[24px] min-[1200px]:text-[28px]">
+        <div className="flex flex-row justify-around gap-[10px] w-full">
+          <p className="text-[24px] min-[300px]:text-[16px] min-[600px]:text-[20px] min-[900px]:text-[24px] min-[1200px]:text-[26px]">
             💣 Mines: {game.mineCount}
           </p>
-          <p className="text-[24px] min-[300px]:text-[16px] min-[600px]:text-[20px] min-[900px]:text-[24px] min-[1200px]:text-[28px]">
+          <p className="text-[24px] min-[300px]:text-[16px] min-[600px]:text-[20px] min-[900px]:text-[24px] min-[1200px]:text-[26px]">
             🚩 Flags: {game.flagCount}
           </p>
-          <p className="text-[24px] min-[300px]:text-[16px] min-[600px]:text-[20px] min-[900px]:text-[24px] min-[1200px]:text-[28px]">
+          <p className="text-[24px] min-[300px]:text-[16px] min-[600px]:text-[20px] min-[900px]:text-[24px] min-[1200px]:text-[26px]">
             🪙 Coins: {game.coins}
           </p>
-          <p className="text-[24px] min-[300px]:text-[16px] min-[600px]:text-[20px] min-[900px]:text-[24px] min-[1200px]:text-[28px]">
+          <p className="text-[24px] min-[300px]:text-[16px] min-[600px]:text-[20px] min-[900px]:text-[24px] min-[1200px]:text-[26px]">
             💰 Total: {game.totalCoinsEarned}
           </p>
         </div>
