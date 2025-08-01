@@ -1,0 +1,43 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@layer utilities {
+  .game-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+
+  .card-hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-flip {
+    animation: flipCard 0.3s ease-in-out;
+  }
+
+  @keyframes flipCard {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%,
+    100% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+  }
+}
